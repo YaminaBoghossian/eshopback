@@ -1,23 +1,40 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, PrimaryGeneratedColumn, Column, OneToMany} from "typeorm";
+import {Contact} from './Contact'
+import { Order } from "./Order";
 
 @Entity()
-export class Photo {
+export class User {
+
+    constructor(pseudo:string, email:string, mdp:string){
+        this.pseudo = pseudo;
+        this.email = email;
+        this.mdp = mdp;
+    }
 
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
-    name: string;
+    @Column({
+        length: 100
+    })
+    pseudo: string;
 
-    @Column()
-    description: string;
+    @Column({
+        length: 100
+    })
+    email: string;
 
-    @Column()
-    filename: string;
+    @Column({
+        length: 30
+    })
+    mdp: string;
 
-    @Column()
-    views: number;
+    @Column("date")
+    dateinscription: Date;
 
-    @Column()
-    isPublished: boolean;
+    @OneToMany( type => Contact, contact => contact.user)
+    contact: Contact[];
+
+    @OneToMany( type => Order, order => order.user)
+    orders: Order[];
 }
