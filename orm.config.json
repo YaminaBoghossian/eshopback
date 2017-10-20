@@ -1,0 +1,19 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3020,
+    "username": "admin",
+    "password": "simplon",
+    "database": "eshopng",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "entity/**/*.ts"
+    ],
+    "migrations": [
+        "migration/**/*.ts"
+    ],
+    "subscribers": [
+        "subscriber/**/*.ts"
+    ]
+}

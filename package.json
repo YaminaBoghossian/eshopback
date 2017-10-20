@@ -1,28 +1,39 @@
 {
-  "name": "eshopback",
-  "version": "0.0.1",
-  "description": "e shop back",
-  "main": "main.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YaminaBoghossian/eshopback.git"
-  },
-  "keywords": [
-    "node",
-    "js",
-    "typescript",
-    "back"
-  ],
-  "author": "boghossian",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/YaminaBoghossian/eshopback/issues"
-  },
-  "homepage": "https://github.com/YaminaBoghossian/eshopback#readme",
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+    "name": "eshopback",
+    "version": "0.0.1",
+    "description": "e shop back",
+    "main": "main.ts",
+    "scripts": {
+        "start": "ts-node main.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YaminaBoghossian/eshopback.git"
+    },
+    "keywords": [
+        "node",
+        "js",
+        "typescript",
+        "back"
+    ],
+    "author": "boghossian",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/YaminaBoghossian/eshopback/issues"
+    },
+    "homepage": "https://github.com/YaminaBoghossian/eshopback#readme",
+    "dependencies": {
+        "@types/body-parser": "^1.16.5",
+        "@types/express": "^4.0.37",
+        "@types/mysql": "0.0.34",
+        "@types/node": "^8.0.46",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
+        "mysql": "^2.15.0",
+        "reflect-metadata": "^0.1.10",
+        "ts-node": "^3.3.0",
+        "typeorm": "^0.1.1",
+        "typescript": "^2.5.3"
+    }
 }
