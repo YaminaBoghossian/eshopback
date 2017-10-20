@@ -1,0 +1,28 @@
+{
+  "name": "eshopback",
+  "version": "0.0.1",
+  "description": "e shop back",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaminaBoghossian/eshopback.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "typescript",
+    "back"
+  ],
+  "author": "boghossian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YaminaBoghossian/eshopback/issues"
+  },
+  "homepage": "https://github.com/YaminaBoghossian/eshopback#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
